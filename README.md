@@ -1,0 +1,1 @@
+Python exerices for homework 2
