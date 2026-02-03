@@ -2,6 +2,7 @@ import json
 from pydantic import BaseModel
 
 #Make class blueprint of protein attributes
+#I used ChatGPT here because i was very confused with how i would call the nested dictionaries in protein list
 class ProteinEntry(BaseModel):
    primaryAccession: str
    organism: dict
@@ -24,10 +25,6 @@ def find_total_mass(proteins):
     print(total_mass)
 
 
-        
-
-
-
 def find_large_proteins(proteins):
         large_proteins = []
         for p in proteins:
@@ -35,9 +32,6 @@ def find_large_proteins(proteins):
                         large_proteins.append(p.proteinName)
         return large_proteins
                 
-
-
-
 def find_non_eukaryotes(proteins):
     non_euk = []
     for p in proteins:
