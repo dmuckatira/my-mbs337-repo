@@ -1,1 +1,4 @@
-myenv
+env
+venv
+.venv
+redis-data
