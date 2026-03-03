@@ -38,14 +38,15 @@ To stop the container when you are done:
 ## Script Description
 
 **Shebang Line and Imports**
-#!/usr/bin/env python3
-from Bio import Entrez, SeqIO
-import json
-import redis
-import argparse
-import logging
-import socket
-import sys
+
+    #!/usr/bin/env python3
+    from Bio import Entrez, SeqIO
+    import json
+    import redis
+    import argparse
+    import logging
+    import socket
+    import sys
 
 ### Functions
 
@@ -76,3 +77,6 @@ Then run the script:
 
     python3 get_ncbi_genbank_records.py
 
+## AI Usage
+
+I used Claude to format my ReadME so it is aesthetic.
