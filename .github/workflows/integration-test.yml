@@ -11,6 +11,7 @@ jobs:
 
     - name: Start containers
       run: docker compose up --build -d
+      working-directory: homework08
 
     - name: Set up Python
       uses: actions/setup-python@v4
